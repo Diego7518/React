@@ -1,0 +1,162 @@
+.profile-container {
+    display: flex;
+    align-items: center;
+    gap: 4rem;
+    padding: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .profile-image {
+    width: 150px;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    object-fit: cover;
+  }
+  
+  .description-section {
+    flex: 1;
+  }
+  
+  .title {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #1a1a1a;
+    margin-bottom: 1rem;
+    background: linear-gradient(to right, #2E8B57, #3CB371);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  
+  .description {
+    font-size: 1.2rem;
+    color: #4a4a4a;
+    margin-bottom: 2rem;
+    line-height: 1.6;
+  }
+  
+  .contact-section {
+    margin-top: 2rem;
+  }
+  
+  .contact-title {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #2E8B57;
+    margin-bottom: 0.5rem;
+  }
+  
+  .email-link {
+    color: #4a4a4a;
+    text-decoration: none;
+    transition: color 0.3s ease;
+    font-size: 1.1rem;
+  }
+  
+  .email-link:hover {
+    color: #2E8B57;
+  }
+
+.skills-section {
+    margin: 2rem 0;
+  }
+  
+  .skills-title {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #2E8B57;
+    margin-bottom: 1rem;
+  }
+  
+  .skills-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.8rem;
+  }
+  
+  .skill-tag {
+    background: linear-gradient(135deg, #2E8B57, #3CB371);
+    color: white;
+    padding: 0.5rem 1rem;
+    border-radius: 20px;
+    font-size: 0.9rem;
+    font-weight: 500;
+    transition: transform 0.2s ease;
+  }
+  
+  .skill-tag:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(46, 139, 87, 0.2);
+  }
+
+  /* ... existing code ... */
+
+.profile-container {
+  display: flex;
+  padding: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+  gap: 2rem;
+}
+
+/* Media query para dispositivos móviles */
+@media screen and (max-width: 768px) {
+  .profile-container {
+    flex-direction: column;
+    padding: 1rem;
+    text-align: center;
+  }
+
+  .profile-section {
+    margin: 0 auto;
+  }
+
+  .profile-image {
+    max-width: 200px;
+    width: 100%;
+    height: auto;
+    margin-top: 90px;
+  }
+
+  .description-section {
+    padding: 1rem 0;
+  }
+
+  .skills-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 0.5rem;
+  }
+
+  .title {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+  }
+
+  .description {
+    font-size: 1rem;
+    line-height: 1.5;
+  }
+}
+
+/* Para pantallas muy pequeñas */
+@media screen and (max-width: 480px) {
+  .profile-container {
+    padding: 0.5rem;
+  }
+
+  .profile-image {
+    max-width: 150px;
+  }
+
+  .title {
+    font-size: 1.2rem;
+  }
+
+  .skills-title,
+  .contact-title {
+    font-size: 1.1rem;
+  }
+}
